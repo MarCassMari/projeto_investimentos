@@ -6,10 +6,11 @@ from django.shortcuts import HttpResponse
 def pagina_inicial(request):
     return HttpResponse('Página padrão pronta para ser preenchida')
 
-def contato_duvidas(request):
-    return HttpResponse('Em caso de dúvidas, envie uma mensagem para o email teste@gmail.com.org')
+def novo_investimento(request):
+     return render(request,'investimentos/novo_investimento.html')
 
-def minha_historia(request):
-
-    pessoa = {'nome': 'Lucius','idade':20, 'hobby': 'Games'}
-    return render(request,'investimentos/minha_historia.html', pessoa)
+def investimento_registrado(request):
+     investimento = {
+          'tipo_investimento': request.POST.get('TipoInvestimento') 
+     }
+     return render(request,'investimentos/investimento_registrado.html', investimento)
