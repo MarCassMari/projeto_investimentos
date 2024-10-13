@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from invista_me import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+   path('', views.pagina_inicial),
+   path('contato/', views.contato_duvidas, name='contato'),
+   path('minha_historia/', views.minha_historia,name ='minha_historia') 
 ]
