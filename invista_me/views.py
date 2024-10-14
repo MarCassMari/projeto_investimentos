@@ -14,3 +14,5 @@ def investimento_registrado(request):
           'tipo_investimento': request.POST.get('TipoInvestimento') 
      }
      return render(request,'investimentos/investimento_registrado.html', investimento)
+def investimento(request):
+     return render(request,'')
