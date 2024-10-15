@@ -1,8 +1,8 @@
-<form action="{% url 'investimento_registrado' %}" method="POST">
+<form action="" method="POST">
   {% csrf_token %}
-  <label for"">
-TIPO DE INVESTIMENTO
-  </label>
-  <input type="text" name="TipoInvestimento">
+
+  <h1>Fomulário Novo Investimento</h1>
+
+  {{formulario}}
   <button type="submit">SALVAR</button>
 </form>
