@@ -1,8 +1,10 @@
-<form action="" method="POST">
-  {% csrf_token %}
-
+{% extends 'investimentos/base.html' %} {% block conteudo %} {% load
+crispy_forms_tags %}
+<div class="container">
   <h1>Fomulário Novo Investimento</h1>
-
-  {{formulario}}
-  <button type="submit">SALVAR</button>
-</form>
+  <form action="" method="POST">
+    {% csrf_token %} {{formulario}}
+    <button type="submit" class="btn btn-success">SALVAR</button>
+  </form>
+</div>
+{% endblock %}
