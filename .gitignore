@@ -32,8 +32,6 @@ db.sqlite3
 # Local development environment
 .env
 
-# Django secret key
-settings.py
 
 # Unit test / coverage reports
 htmlcov/
