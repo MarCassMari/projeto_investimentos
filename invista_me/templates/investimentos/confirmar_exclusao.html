@@ -1,13 +1,11 @@
-{% extends 'investimentos/base.html' %} {% block conteudo %}
+{% extends 'investimentos/base.html' %}
+{% block conteudo %}
+{% load crispy_forms_tags %}
 <div class="container">
-  <form method="POST">
-    {% csrf_token %}
-    <h1 style="text-align: center">
-      Confirmar exclusão do {{item.investimentos}}
-    </h1>
-    <button class="btn btn-default">
-      <a href="{% url 'investimentos' %}">Cancelar</a>
-    </button>
+  <form action="" method="POST">
+     {% csrf_token %}
+    <h1 style="text-align: center"> Confirmar exclusão do {{item.investimento}} </h1>
+    <button><a href="{% url 'investimentos' %}">Cancelar</a></button>
     <button class="btn btn-danger" type="submit">Confirmar</button>
   </form>
 </div>
