@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'invista_me',
     'crispy_forms',
+
     'crispy_bootstrap5',
     'usuarios'
+
 ]
 
 MIDDLEWARE = [
@@ -127,4 +129,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
