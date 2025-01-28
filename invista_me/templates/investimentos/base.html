@@ -22,6 +22,14 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="{% url 'investimentos' %}">Invista-Me!</a>
+      <ul style="list-style: none;">
+        <li style="float: left;>">
+          <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        <li style="float: left;>">
+          <a class="nav-item nav-link" href="{% url 'novo_usuario' %}">Cadastro</a>
+        </li>
+      </ul>
     </nav>
     {% if messages %}
     {% for message in messages %}
